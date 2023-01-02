@@ -1750,6 +1750,7 @@ textarea.input {
 
   .hero__container {
     height: 100vh;
+    padding-bottom: 6.875rem;
   }
 
   .hero__title {

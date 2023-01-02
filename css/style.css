@@ -1778,7 +1778,8 @@ textarea.input {
     width: 100%;
   }
 
-  .gallery__button:hover {
+  .gallery__button:hover,
+  .gallery__button:active {
     width: 100%;
   }
 

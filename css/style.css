@@ -676,6 +676,9 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 ._header-scroll .menu {
@@ -806,6 +809,14 @@ textarea.input {
 
 .action__text span {
   position: relative;
+}
+
+.action__text span::-moz-selection {
+  background-color: darkblue;
+}
+
+.action__text span::selection {
+  background-color: darkblue;
 }
 
 .action__text span::before {

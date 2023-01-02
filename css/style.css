@@ -903,7 +903,7 @@ textarea.input {
 }
 
 .menu-open .icon-menu::after {
-  bottom: calc(50% - 0.125rem);
+  bottom: calc(50% - 0.0625rem);
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -1775,6 +1775,10 @@ textarea.input {
   }
 
   .gallery__button {
+    width: 100%;
+  }
+
+  .gallery__button:hover {
     width: 100%;
   }
 

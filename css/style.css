@@ -180,7 +180,6 @@ textarea {
   width: 100%;
   display: block;
   padding: 0px 20px;
-  border: 1px solid #eee;
 }
 
 textarea.input {
@@ -1438,9 +1437,10 @@ textarea.input {
   font-size: 0.875rem;
   line-height: 1.428;
   padding: 0.875rem 1.0625rem;
+  outline: 0.125rem solid #f7f8ff;
 }
 
-.form-contact__input:focus {
+.form-contact__input:focus-within {
   outline: 2px solid #0075FF;
 }
 
@@ -1485,20 +1485,22 @@ textarea.input {
 
 .form-contact__textarea {
   background: #f7f8ff;
+  border: 0.125rem solid transparent;
   border-radius: 0.5rem;
   padding: 0.875rem 1.0625rem;
   min-height: 9rem;
   font-size: 0.875rem;
   line-height: 1.428;
   /* 20/14 */
+  outline: 0.125rem solid #f7f8ff;
 }
 
 .form-contact__textarea:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.form-contact__textarea:focus {
-  outline: 2px solid #0075FF;
+.form-contact__textarea:focus-within {
+  border: 0.125rem solid #0075FF;
 }
 
 .form-contact__textarea::-webkit-input-placeholder {
@@ -2149,13 +2151,12 @@ textarea.input {
   }
 
   .form-contact__input:hover {
-    background: #f7f8ff;
     outline: 0.125rem solid #ccd0e0;
   }
 
   .form-contact__textarea:hover {
     background: #f7f8ff;
-    outline: 0.125rem solid #ccd0e0;
+    border: 0.125rem solid #ccd0e0;
   }
 
   .form-contact__button:hover {

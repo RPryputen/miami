@@ -1432,16 +1432,17 @@ textarea.input {
 }
 
 .form-contact__input {
+  outline: none;
   background: #f7f8ff;
   border-radius: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.428;
   padding: 0.875rem 1.0625rem;
-  outline: 0.125rem solid #f7f8ff;
+  border: 0.125rem solid #f7f8ff;
 }
 
-.form-contact__input:focus-within {
-  outline: 2px solid #0075FF;
+.form-contact__input:focus {
+  border: 0.125rem solid #0075FF;
 }
 
 .form-contact__input:not(:last-child) {
@@ -1484,6 +1485,7 @@ textarea.input {
 }
 
 .form-contact__textarea {
+  outline: none;
   background: #f7f8ff;
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
@@ -1492,14 +1494,14 @@ textarea.input {
   font-size: 0.875rem;
   line-height: 1.428;
   /* 20/14 */
-  outline: 0.125rem solid #f7f8ff;
+  border: 0.125rem solid #f7f8ff;
 }
 
 .form-contact__textarea:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.form-contact__textarea:focus-within {
+.form-contact__textarea:focus-visible {
   border: 0.125rem solid #0075FF;
 }
 
@@ -2151,11 +2153,10 @@ textarea.input {
   }
 
   .form-contact__input:hover {
-    outline: 0.125rem solid #ccd0e0;
+    border: 0.125rem solid #ccd0e0;
   }
 
   .form-contact__textarea:hover {
-    background: #f7f8ff;
     border: 0.125rem solid #ccd0e0;
   }
 
